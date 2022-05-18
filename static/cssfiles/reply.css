@@ -1,0 +1,14 @@
+.sent-msg{font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #68c403;
+    background: #eee;
+    margin-bottom: 0;
+    padding: 10px;}
+form{font-family: sans-serif;
+    background: #eee;
+    padding: 100px 10px 100px 10px;
+    font-size: 25px;}
+input,textarea{width: 100%;}
+input[type="radio"] {width: 5%;}
+button{margin-top: 50px;
+    font-size: 30px;
+    padding: 5px 15px;}

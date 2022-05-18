@@ -1,0 +1,89 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block title %}Feedback{% endblock title %}
+{% block csslink %}
+<link rel="stylesheet" href="{% static 'cssfiles/enquiry.css' %}" />
+{% endblock csslink %}
+{% block section %}
+<form action="" method="post" class="form">
+    {% csrf_token %}
+    <h1 class="form-h">Feedback Form</h1><br>
+    {% if messages %}
+        {% for message in messages %}
+            <h1 class="sent-msg">{{message}}</h1><br>
+        {% endfor %}
+    {% endif %}
+    <p><strong>As a part of our Quality Management System it would be a matter of great pleasure to receive your comment on our quality & services. Your most valuable comments will go a long way to further improve our product and services and serve you better. Kindly fill the appropriate box as per your judgement.</strong></p><br>
+    01- Product Quality:
+    <input type="radio" name="p_quality" value="Excellent" required>Excellent
+    <input type="radio" name="p_quality" value="Good">Good
+    <input type="radio" name="p_quality" value="Satisfactory">Satisfactory
+    <input type="radio" name="p_quality" value="Needs Improvements">Needs Improvements
+    <br><br><br>
+
+    02- Delivery on Time:
+    <input type="radio" name="p_delivery" value="Excellent" required>Excellent
+    <input type="radio" name="p_delivery" value="Good">Good
+    <input type="radio" name="p_delivery" value="Satisfactory">Satisfactory
+    <input type="radio" name="p_delivery" value="Needs Improvements">Needs Improvements
+    <br><br><br>
+
+    03- Communication (Response to your queries,complaints and suggestions):
+    <input type="radio" name="p_communication" value="Excellent" required>Excellent
+    <input type="radio" name="p_communication" value="Good">Good
+    <input type="radio" name="p_communication" value="Satisfactory">Satisfactory
+    <input type="radio" name="p_communication" value="Needs Improvements">Needs Improvements
+    <br><br><br>
+
+    04- Behaviour (Of our Mktg. Team):
+    <input type="radio" name="p_behaviour" value="Excellent" required>Excellent
+    <input type="radio" name="p_behaviour" value="Good">Good
+    <input type="radio" name="p_behaviour" value="Satisfactory">Satisfactory
+    <input type="radio" name="p_behaviour" value="Needs Improvements">Needs Improvements
+    <br><br><br>
+
+    05- Paper Work (Related to Dispatch and Delivery):
+    <input type="radio" name="p_paperwork" value="Excellent" required>Excellent
+    <input type="radio" name="p_paperwork" value="Good">Good
+    <input type="radio" name="p_paperwork" value="Satisfactory">Satisfactory
+    <input type="radio" name="p_paperwork" value="Needs Improvements">Needs Improvements
+    <br><br><br>
+
+    06- Packing Quality:
+
+    a- Inner Packing
+    <input type="radio" name="p_inner" value="Excellent" required>Excellent
+    <input type="radio" name="p_inner" value="Good">Good
+    <input type="radio" name="p_inner" value="Satisfactory">Satisfactory
+    <input type="radio" name="p_inner" value="Needs Improvements">Needs Improvements
+    <br><br><br>
+
+    b- Outer Packing
+    <input type="radio" name="p_outer" value="Excellent" required>Excellent
+    <input type="radio" name="p_outer" value="Good">Good
+    <input type="radio" name="p_outer" value="Satisfactory">Satisfactory
+    <input type="radio" name="p_outer" value="Needs Improvements">Needs Improvements
+    <br><br><br>
+
+    07- Presentations & Catalogues:
+    <input type="radio" name="p_c" value="Excellent" required>Excellent
+    <input type="radio" name="p_c" value="Good">Good
+    <input type="radio" name="p_c" value="Satisfactory">Satisfactory
+    <input type="radio" name="p_c" value="Needs Improvements">Needs Improvements
+    <br><br><br>
+
+    Comments:<textarea name="comment" rows="5"></textarea><br><br>
+    Company Name:<input type="text" name="company"><br><br>
+    Email:<input type="email" name="email"><br><br>
+    Mobile Number:<input type="number" name="number"><br><br>
+    Karam Channel Partner / Dealer Name(who supplied Goods):
+    <input type="text" name="dealer"><br><br>
+
+    Whether Test Certificates received with Goods:
+    <input type="radio" name="goods" value="Yes" required>Yes
+    <input type="radio" name="goods" value="No">No
+    <br><br>
+
+    <button type="submit">Submit Feedback</button>
+</form>
+{% endblock section %}

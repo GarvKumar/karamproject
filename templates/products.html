@@ -1,0 +1,30 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block title %}Products{% endblock title %}
+{% block csslink %}
+<link rel="stylesheet" href="{% static 'cssfiles/product.css' %}" >
+{% endblock csslink %}
+{% block section %}
+    <div class="product-section">
+        <div class="product-section-1">
+            <h2>Health Care</h2>
+            <p class="product-section-p1">In the wake of the current COVID-19 pandemic, KARAM introduces its special medical range of personal protective equipment (PPE) to provide superior protection and comfort to Doctors, Nurses and all other Health Care workers who are risking their lives for our safety. KARAM salutes all these super heroes and always wishes well for their good health!</p>
+            <img src="{% static 'images/products/img1.jpg' %}"/ title="Medical Face shield">
+            <img src="{% static 'images/products/img2.png' %}"/ title="Safety Goggles Against Biochemical Splashes">
+        </div>
+        <div class="product-section-2">
+            <br><br>
+            <h2>Oil Gas & Petroleum</h2>
+            <p class="product-section-p1">The following range of KARAM products can be used in the Oil, Gas and Petroleum sector including areas of Upstream, Downstream, Distribution and Refining. KARAM aims to mitigate the risk and reduce fatality rate in the OGP sector.</p>
+            <img src="{% static 'images/products/img21.jpg' %}" title="Head Protection" class="product-section-img" />
+            <img src="{% static 'images/products/img22.jpg' %}" title="Eye and Face Protection" class="product-section-img" />
+            <br>
+            <img src="{% static 'images/products/img23.jpg' %}" title="Hearing Protection" class="product-section-img" />
+            <img src="{% static 'images/products/img24.jpg' %}" title="FLS" class="product-section-img" />
+            <br>
+            <img src="{% static 'images/products/img25.jpg' %}" 
+            title="Fall Protection" class="product-section-img" />
+            <img src="{% static 'images/products/img26.jpg' %}" title="Foot Protection" class="product-section-img" />
+        </div>
+    </div>
+{% endblock section %}

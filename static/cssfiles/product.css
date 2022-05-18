@@ -1,0 +1,7 @@
+.product-section {
+    padding: 50px;
+    background: #eee;
+}
+.product-section-p1, .product-section-img {
+    padding: 10px 0 0 30px;
+}

@@ -1,0 +1,60 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block csslink %}
+<link rel="stylesheet" href="{% static 'cssfiles/about.css' %}">
+{% endblock csslink %}
+{% block section %}
+<div class="container-fluid about_container" id="">
+    <div class="row">
+        <div class="col-md-4 col-12 about_col1">
+            <h1 class="h1-about">About Us</h1>
+        </div>
+        <div class="col-md-8 col-12 about_col2">
+            <p>KARAM specializes in the field of Safety Harness & Body Belts, Hooks & Karabiners, Lanyards, Anchor Points, Horizontal Lifelines, Vertical Lifelines, Tripods & Winches, Rescue & Descent Equipment, Self Retracting Lifelines, Safety Helmets, Safety Shoes, Protective Eyewear, Hearing Protection, Welding Protection, Respirators etc. All these products undergo stringent quality checks and are certified as per IS & DGMS and other International norms.
+            KARAM also offers customized Training and Consultancy to combat Safety Hazards in different industries in India.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock section %}
+
+{% block section2 %}
+<div class="container-fluid about_section">
+    <div class="row">
+        <div class="col-md-3 col-12 about_section_col1">
+            <h3 class="about_section_col1_h">Our Mission</h3>
+        </div>
+        <div class="col-md-9 col-12 about_section_col1">
+            <p class="about_section_col1_p">“KARAM is deeply committed to protecting the lives of millions of workers working in the Industrial Environment all across the globe by manufacturing and providing them with supreme quality of Personal Protective Equipment.
+            <br>
+            We shall achieve this by manufacturing products that exceed the quality requirements laid down in various International standards and by brilliantly serving our esteemed Customers to answer their needs. Our Mission is to save millions of such lives globally and make a lasting impact in the field of Personal Safety.”</p>
+        </div>
+        <div class="col-md-3 col-12 about_section_col2">
+            <h3 class="about_section_col1_h">Our Vision</h3>
+        </div>
+        <div class="col-md-9 col-12 about_section_col2">
+            <p class="about_section_col1_p">“We shall provide the entire range of Fall Protection Equipment to the Global market through sustained efforts in R&D, manufacturing under cost effective, safe and systematic processes. We will reach out to Customer in more than 100 countries across the globe providing prompt and effective services to them. We shall provide a full range of Personal Protective Equipment to our Customers serving the needs of the Workers in India. We shall equip the Workers in every part of India exposed to various hazards at their working environment, with complete knowledge on Personal Safety. We will dedicate our efforts in reaching out to them; understand their needs, and will provide appropriate solutions through right equipment selection and training.”</p>
+        </div>
+        <div class="col-md-3 col-12 about_section_col3">
+            <h3 class="about_section_col1_h">Quality Policy</h3>
+        </div>
+        <div class="col-md-9 col-12 about_section_col3">
+            <p class="about_section_col1_p">“Our Company is committed to provide ultimate customer satisfaction by ensuring the production and testing of Industrial Safety Equipment:
+            Of Highest Quality Standard and Timely Delivery of Goods.
+            <br>
+            We also commit ourselves to abide by all applicable and obligatory requirements and move towards operational goals and targets indicated by the strategic directions of the organization. We will provide an Environment-Friendly & Healthy work atmosphere to continually improve in all spheres of activities and nurture a genuine team spirit by adopting ISO9001:2015 guidelines.”
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="karam">
+    <h2 class="karam-h">Manufacturing Set-Up at KARAM</h2>
+    <p class="karam-p">KARAM has a strong manufacturing set-up, equipped with the finest and latest technology driven machinery. All systems and processes are assessed by SGS UK, and registered to ISO 9001-2015.</p>
+    <h2 class="karam-h">LUCKNOW UNITS</h2>
+    <p class="karam-p">Located in the outskirts of the city of Lucknow, about 500kms to the South-East of New Delhi, the Factory is spread over a span of more than 23 acres. A Unit where all the products are manufactured completely in-house is entirely vertically integrated, and hence is unique in its kind. All the components of the Fall Protection range of KARAM products are produced within one large campus, and yarn and steel are credited as being the only main raw materials for the same. The idea is to have complete control over the finest details of manufacturing to reach the highest levels of quality standards. The Metal operations involved are extensive, covering all aspects of manufacturing on CNC machines The Textile Operations involve starting from the basic raw material -high tenacity yarn, manufacturing the entire range of webbing, twisted rope and kernmantle rope. In addition to this, it also permits extreme levels of customization for the customers, in order to fulfill their needs.</p>
+    <img src="{% static 'images/img1.jpg' %}" class="karam-img" />
+</div>
+
+{% endblock section2 %}

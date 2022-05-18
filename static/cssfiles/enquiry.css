@@ -1,0 +1,6 @@
+.form {padding: 50px;background: #eee;}
+.form-h{text-align: center;text-decoration: underline;color: darkred;}
+.sent-msg{font-family: Verdana, Geneva, Tahoma, sans-serif; transition: 2s ease;color: #68c403;}
+input[type="radio"] {width: 5%;}
+input, textarea{width: 100%;}
+button{margin-top: 50px;font-size: 30px;padding: 5px 15px;}

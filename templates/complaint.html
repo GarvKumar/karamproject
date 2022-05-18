@@ -1,0 +1,29 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block title %}Complaint{% endblock title %}
+{% block csslink %}
+<link rel="stylesheet" href="{% static 'cssfiles/enquiry.css' %}" />
+{% endblock csslink %}
+{% block section %}
+    <form action="" method="post" enctype="multipart/form-data" class="form">
+        {% csrf_token %}
+        <h1 class="form-h">Complaint Form</h1><br>
+        {% if messages %}
+            {% for message in messages %}
+                <h1 class="sent-msg">{{message}}</h1><br>
+            {% endfor %}
+        {% endif %}
+        Name:<input type="text" name="name"><br><br>
+        Email:<input type="email" name="email"><br><br>
+        Mobile Number:<input type="number" name="number"><br><br>
+        Company Name:<input type="text" name="company"><br><br>
+        Address:<input type="text" name="address"><br><br>
+        City:<input type="text" name="city"><br><br>
+        State:<input type="text" name="state"><br><br>
+        Postal Code:<input type="text" name="p_code"><br><br>
+        Item Name:<input type="text" name="i_name"><br><br>
+        Item Code:<input type="text" name="i_code"><br><br>
+        Attachment of any File(Docx, Pdf, jpg, png, zip etc):<input type="file" name="file" required><br><br>
+        <button type="submit">Submit Complaint</button>
+    </form>
+{% endblock section %}

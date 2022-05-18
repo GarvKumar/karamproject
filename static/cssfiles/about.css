@@ -1,0 +1,40 @@
+.about_container{
+    background-image: url('../images/aboutus/img.jpg');
+    color: white;
+    font-family: sans-serif;
+}
+.about_col1{padding: 185px 0 0 100px;}
+.h1-about{font-size: 60px;
+    font-weight: bold;}
+.about_col2{padding: 100px;
+    font-size: 20px;}
+
+.about_section{font-family: sans-serif;}
+
+.about_section_col1 {
+    background: #ededed;
+    padding: 50px 0 50px 0;
+}
+
+.about_section_col2 {
+    background: #e0e0e0;
+    padding: 50px 0 50px 0;
+}
+
+.about_section_col3 {
+    background: #ededed;
+    padding: 50px 0 50px 0;
+}
+
+.about_section_col1_h {
+    padding: 60px 0 0 80px;
+    color: darkred;
+}
+
+.about_section_col1_p{padding: 0 100px 0 100px;
+    font-size: 20px;}
+
+.karam{padding: 50px;background: #eeeeee87;border-radius: 70px;font-family: sans-serif; }
+
+.karam-p{padding: 10px 0 0 30px;}
+.karam-img{width: 100%;}

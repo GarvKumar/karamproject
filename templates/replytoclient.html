@@ -1,0 +1,21 @@
+{% extends 'parent.html' %}
+{% load static %}
+{% block title %}Reply To Client{% endblock title %}
+{% block csslink %}
+<link rel="stylesheet" href="{% static 'cssfiles/reply.css' %}">
+{% endblock csslink %}
+{% block section %}
+{% if messages %}
+    {% for message in messages %}
+        <h1 class="sent-msg">{{message}}</h1>
+    {% endfor %}
+{% endif %}
+<form action="" method="post">
+    {% csrf_token %}
+    Object Name:<input type="text" name="object" required><br><br>
+    Message Title:<input type="text" name="msg_title" required
+    ><br><br>
+    Reply:<textarea name="reply" rows="10" required></textarea><br><br>
+    <button type="submit">Send Mail</button>
+</form>
+{% endblock section %}

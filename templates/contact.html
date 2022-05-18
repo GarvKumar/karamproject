@@ -1,0 +1,25 @@
+{% extends 'parent.html' %}
+{% block title %}Contact{% endblock title %}
+{% load static %}
+{% block csslink %}
+<link rel="stylesheet" href="{% static 'cssfiles/contact.css' %}">
+{% endblock csslink %}
+{% block section %}
+    <div class="contact-section">
+        <h2 class="contact-h">GET IN TOUCH WITH US</h2>
+        <iframe loading="lazy" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.5724860196133!2d77.31478531549455!3d28.5825976930892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4596b508879%3A0x582c48076ed8c14b!2sKaram+Industries!5e0!3m2!1sen!2sin!4v1558072350582!5m2!1sen!2sin" width="600" height="450" frameborder="0" allowfullscreen="allowfullscreen" class="contact-iframe"></iframe>
+    </div>
+    <div class="container-fluid contact-parts">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <a href="{% url 'enquiry' %}" class="contact-parts-link">Click for Enquiry</a>
+            </div>
+            <div class="col-md-4 col-12">
+                <a href="{% url 'complaint' %}" class="contact-parts-link">Click for Complaint</a>
+            </div>
+            <div class="col-md-4 col-12">
+                <a href="{% url 'feedback' %}" class="contact-parts-link">Click for Feedback</a>
+            </div>
+        </div>
+    </div>
+{% endblock section %}
